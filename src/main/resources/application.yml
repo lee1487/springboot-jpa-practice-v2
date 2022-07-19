@@ -13,6 +13,12 @@ spring:
 #        show_sql: true
         format_sql: true
 
+server.error:
+  include-exception: false
+  include-message: always
+  include-binding-errors: always
+  include-stacktrace: always # 오류 응답에 stacktrace 내용을 포함할 지 여부
+
 logging.level:
   org.hibernate.SQL: debug
 #  org.hibernate.type: trace
